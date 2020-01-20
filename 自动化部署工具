@@ -1,0 +1,19 @@
+webpack概念：现代的js静态模块打包器。当webpack处理应用程序时，会递归构建一个依赖关系图，dependency graph，其中包含应用程序
+需要的每个模块，然后将所有模块打包成为一个或多个bundle
+webpack是基于node.js开发
+前端自动化部署工具发展历史：grunt，gulp，fis，webpack（version 1.0-4.0）
+webpack安装：分为两种方式，一种是全局安装，一种是局部安装；为了防止全局安装出现版本冲突，可以安装在本地项目中
+$yarn add webpakck webpack-cli -D
+$npm i webpack webpack-cli --save-dev
+
+npm5.2版本后，提供了一个命令：npx,基于这个命令可以执行本地安装的模块
+$npx webpack基于npx执行了webpack命令，而这个命令就是实现打包部署的
+
+webpack4新属性
+1mode属性
+webpack需要设置mode属性，可以是development或者production；例如webpack-mode development
+
+webpack针对生产模式提供的特性：
+开启所有的优化代码
+更小的bundle大小
+去除掉只在
